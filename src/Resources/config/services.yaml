@@ -1,0 +1,8 @@
+services:
+  # Automatically register all services in src/, excluding certain directories
+  Mikamatto\Scheduler\:
+      resource: '../../*'
+      exclude: '../../{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+      autowire: true
+      autoconfigure: true
+      public: false
